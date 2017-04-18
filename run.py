@@ -206,7 +206,7 @@ def game_loop():
     # Run through the death animation.
     player_death_sound.play()
     player_explosion_control()
- 
+
     pygame.time.wait(1000)
 
 
