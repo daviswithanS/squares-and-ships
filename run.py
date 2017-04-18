@@ -184,8 +184,8 @@ def game_loop():
         enemy_explosion_control()
 
         # Render the text.
-        score_text = game_font.render("Score: %s" % (score), True, white)
-        level_text = game_font.render("Level: %s-%s" % (number_per_spawn, enemy_speed), True, white)
+        score_text = game_font.render("Score: {}".format(score), True, white)
+        level_text = game_font.render("Level: {}-{}".format(number_per_spawn, enemy_speed), True, white)
 
         game_display.blit(score_text, (10, 5))
         game_display.blit(level_text, (10, 29))
@@ -227,7 +227,7 @@ game_display = pygame.display.set_mode((display_width, display_height))
 pygame.display.set_caption("Squares and Ships")
 
 # Set up the in-game font.
-game_font = pygame.font.SysFont('roboto', 24)
+game_font = pygame.font.Font('Roboto-Medium.ttf', 24)
 
 # Set some color constants.
 black = (0, 0, 0)
