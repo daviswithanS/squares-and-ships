@@ -1,5 +1,0 @@
-#!/bin/bash
-for i in {1..5}
-do
-	mv "explosion${i}.bmp" "player_explosion$((i-1)).bmp"
-done
